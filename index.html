@@ -5,20 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./modal/modal.js" defer></script>
+    <link rel="stylesheet" href="./modal/modal.css">
     <script src="main.js" defer></script>
     <title>Dog</title>
 </head>
 <body>
     <header>
 
-        <input type="text" placeholder="Digite uma Raça" id="raca">
+        <input type="text" placeholder="Digite uma Raça" id="raca" list="lista-racas">
+        <datalist id="lista-racas">
+        
+        </datalist>
         <button id="pesquisar">pesquisar</button>
 
     </header>
-    
+
     <main>
-        <div id="imagen-container"></div>
+        <div id="imagem-container"></div>
     </main>
+
+    <div id="modal-container">
+        <div class="modal-content">
+            
+            <header>
+                 <h1>testemodal</h1>
+            </header>
+            <form action="">
+                <label for="">nome</label>
+                <input type="text">
+                <label for="">email</label>
+                <input type="text">
+                <label for="">celular</label>
+                <input type="text">
+            </form>
+            <footer>
+           <button id="fecharbtn">fechar</button>
+            </footer>
+            
+      </div>
+
+    </div> 
+
+      
+
+    </div>
+
+
 
 </body>
 </html>

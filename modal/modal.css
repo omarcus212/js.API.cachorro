@@ -1,0 +1,36 @@
+#modal-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: -1;
+}
+
+#modal-container.active{
+    opacity: 1;
+    z-index: 1;
+    transition: 1s;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+    padding-top: 0;
+    background-color: rgb(197, 198, 199);
+}
+
+.modal-content form{
+    display: flex;
+    flex-direction: column;
+}
